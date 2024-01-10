@@ -78,10 +78,10 @@ export default function Home() {
 
                     <div className="flex w-full">
                       <div className="mx-8 mt-[2vw] w-1/2 ">
-                        <h1 className="font-bold text-[1vw]">
+                        <h1 className="font-bold text-[1.2vw]">
                           You are expected to retire at
                         </h1>
-                        <button className="bg-[#FB7306] font-bold text-white text-[0.5vw] px-2 py-[0.3vw] mt-[1vh] rounded-[2rem]">
+                        <button className="bg-[#FB7306] font-bold text-white text-[0.8vw] px-2 py-[0.3vw] mt-[1vh] rounded-[2rem]">
                           Explore my roadmap
                         </button>
                       </div>
