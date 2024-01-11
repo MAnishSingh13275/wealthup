@@ -1,10 +1,11 @@
-import Image from "next/image";
 import vector from "../../public/Vector.svg";
-import { ImCheckboxChecked } from "react-icons/im";
-import { TiInputChecked } from "react-icons/ti";
-import { GrDocumentImage, GrDocumentText } from "react-icons/gr";
 
-export default function Home() {
+import { TiInputChecked } from "react-icons/ti";
+import { GrDocumentText } from "react-icons/gr";
+import Link from "next/link";
+
+
+export default async function Home() {
   return (
     <div className="bg-gradient-to-r from-[#0A5783] to-[#18A19A]">
       <div className="relative text-white flex flex-col justify-center ]">
@@ -21,9 +22,9 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center mt-[2rem]">
-            <button className="bg-[#FB7306] font-bold p-2 px-[1.5rem] text-xl rounded-[2rem]">
+            <Link href={"/captcha"} className="bg-[#FB7306] font-bold p-2 px-[1.5rem] text-xl rounded-[2rem]">
               Get Started
-            </button>
+            </Link>
           </div>
           <div className="flex justify-between">
             <div className="flex flex-col gap-5 ml-[5vw] mt-[8rem]">
