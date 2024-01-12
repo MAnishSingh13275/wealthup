@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { IoReloadCircle, IoReloadCircleOutline } from "react-icons/io5";
 
-const code = () => {
+const Code = () => {
   const [generatedCode, setGeneratedCode] = useState("");
   const [seconds, setSeconds] = useState(60);
   const [codeValue, setCodeValue] = useState("");
@@ -88,4 +88,4 @@ const code = () => {
   );
 };
 
-export default code;
+export default Code;
