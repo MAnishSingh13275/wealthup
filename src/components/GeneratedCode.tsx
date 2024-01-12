@@ -31,6 +31,11 @@ const GeneratedCode = () => {
     fetchData();
   };
 
+  const refresh = () => {
+    setSeconds(60);
+    generate();
+  };
+
   useEffect(() => {
     const updateTimer = () => {
       setSeconds((prevSeconds) => {
@@ -61,7 +66,7 @@ const GeneratedCode = () => {
     <div className="flex flex-col justify-start items-start">
       <div className="flex justify-between bg-[#D6E9F2] w-[20vw] p-[1vw] mx-auto rounded-lg my-2">
         <h1>{generatedCode}</h1>
-        <button onClick={generate}>
+        <button onClick={refresh}>
           <IoReloadCircleOutline className="text-2xl" />{" "}
         </button>
       </div>
