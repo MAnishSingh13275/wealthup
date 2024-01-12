@@ -33,7 +33,7 @@ const GeneratedCode = () => {
 
   const refresh = () => {
     setSeconds(60);
-    generate();
+    fetchData();
   };
 
   useEffect(() => {
@@ -53,8 +53,8 @@ const GeneratedCode = () => {
   const checkCode = () => {
     if (seconds > 0 && codeValue === generatedCode) {
       alert("success");
-      generate();
-      setCodeValue("");
+      fetchData();
+      setSeconds(60);
     } else if (seconds === 0) {
       alert("Time out");
     } else {
