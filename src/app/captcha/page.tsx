@@ -1,8 +1,6 @@
-import Code from "@/components/code";
+import GeneratedCode from "@/components/GeneratedCode";
 import Link from "next/link";
 import React from "react";
-import { TiInputChecked } from "react-icons/ti";
-
 
 const page = () => {
   return (
@@ -39,11 +37,8 @@ const page = () => {
                     </h2>
 
                     <div className="">
-                      <Code />
+                      <GeneratedCode />
                     </div>
-                    
-
-                 
                   </div>
                 </div>
               </div>

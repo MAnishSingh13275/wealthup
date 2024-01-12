@@ -1,10 +1,8 @@
 "use client";
-
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { IoReloadCircle, IoReloadCircleOutline } from "react-icons/io5";
+import { IoReloadCircleOutline } from "react-icons/io5";
 
-const Code = () => {
+const GeneratedCode = () => {
   const [generatedCode, setGeneratedCode] = useState("");
   const [seconds, setSeconds] = useState(60);
   const [codeValue, setCodeValue] = useState("");
@@ -88,4 +86,4 @@ const Code = () => {
   );
 };
 
-export default Code;
+export default GeneratedCode;
